@@ -102,3 +102,4 @@ Key points
 
 L1 and L2 losses are not correlated with mAP improvement metric. For example, consider 2 cases of bad predictions where there is no overlap. The scores assigned to both cases is zero, but intuitively the (bad) prediction box that is closer to ground truth should incur a lower loss. GIoU modified IoU calculation so that it is a continuous function and can be used as a loss.
 
+[Axial-DeepLab: Stand-Alone Axial-Attention for Panoptic Segmentation](https://arxiv.org/abs/2003.07853)
