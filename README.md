@@ -103,3 +103,12 @@ Key points
 L1 and L2 losses are not correlated with mAP improvement metric. For example, consider 2 cases of bad predictions where there is no overlap. The scores assigned to both cases is zero, but intuitively the (bad) prediction box that is closer to ground truth should incur a lower loss. GIoU modified IoU calculation so that it is a continuous function and can be used as a loss.
 
 [Axial-DeepLab: Stand-Alone Axial-Attention for Panoptic Segmentation](https://arxiv.org/abs/2003.07853)
+
+Key points
+
+[Averaging Weights Leads to Wider Optima and Better Generalization](https://arxiv.org/pdf/1803.05407.pdf)
+
+Key points
+
+Say training budget is B, then 0.75B steps we do regular optimization without averaging and rest of the time we average model weights once every epoch (or more?)
+If we can say that in the final tuning stages (the 0.25B + steps) all the weight space spanned by the models obtained is relatively flat/convex then averaging these models gives better generalization performance. Open question is whether this approach works with optimizers other than SGD (e.g. Adam/LAMB/Novograd.) The good part of this approach is that it is highly parallelizable and the final tuning stage can be distributed - see  [Stocahstic Weight Averaging in Parallel: Large-Batch training that generalizes well](https://openreview.net/pdf?id=rygFWAEFwS)
