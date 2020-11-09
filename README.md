@@ -112,3 +112,9 @@ Key points
 
 Say training budget is B, then 0.75B steps we do regular optimization without averaging and rest of the time we average model weights once every epoch (or more?)
 If we can say that in the final tuning stages (the 0.25B + steps) all the weight space spanned by the models obtained is relatively flat/convex then averaging these models gives better generalization performance. Open question is whether this approach works with optimizers other than SGD (e.g. Adam/LAMB/Novograd.) The good part of this approach is that it is highly parallelizable and the final tuning stage can be distributed - see  [Stocahstic Weight Averaging in Parallel: Large-Batch training that generalizes well](https://openreview.net/pdf?id=rygFWAEFwS)
+
+[SentencePiece: A simple and language independent subword tokenizerand detokenizer for Neural Text Processing](https://www.aclweb.org/anthology/D18-2012.pdf)
+
+Key points
+
+Subword (de)tokenization, language-agnostic, lossless decode(encode(normalize_fst(T))) = normalize_fst(T), where T is a sequence of UNICODE characters. Whitespace is also a symbol (`_`). Directly gives text to vocab id sequence. Training is computationally more efficient O(nlogn) than naive BPE O(n^2) -TODO - summarize the merging process.
