@@ -113,6 +113,9 @@ Key points
 Say training budget is B, then 0.75B steps we do regular optimization without averaging and rest of the time we average model weights once every epoch (or more?)
 If we can say that in the final tuning stages (the 0.25B + steps) all the weight space spanned by the models obtained is relatively flat/convex then averaging these models gives better generalization performance. Open question is whether this approach works with optimizers other than SGD (e.g. Adam/LAMB/Novograd.) The good part of this approach is that it is highly parallelizable and the final tuning stage can be distributed - see  [Stocahstic Weight Averaging in Parallel: Large-Batch training that generalizes well](https://openreview.net/pdf?id=rygFWAEFwS)
 
+[The Marginal Value of Adaptive Gradient Methods in Machine Learning](https://arxiv.org/abs/1705.08292)
+
+
 [Improving Generalization Performance by Switching from Adam to SGD](https://arxiv.org/pdf/1712.07628.pdf)
 
 
