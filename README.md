@@ -118,8 +118,12 @@ If we can say that in the final tuning stages (the 0.25B + steps) all the weight
 
 [Improving Generalization Performance by Switching from Adam to SGD](https://arxiv.org/pdf/1712.07628.pdf)
 
+[Variance Reduction in SGD By Distributed Importance Sampling](https://arxiv.org/pdf/1511.06481.pdf)
 
-[SentencePiece: A simple and language independent subword tokenizerand detokenizer for Neural Text Processing](https://www.aclweb.org/anthology/D18-2012.pdf)
+Key points - Use importance sampling to find most informative examples to update model. Parallel scheme - a set of workers find these examples in parallel to traininig process. This is tied to Curriculum Learning (difference being that in Curriculum Learning/Active Learning the model itself tries to figure out which are the most informative examples.) TBD
+
+
+[SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing](https://www.aclweb.org/anthology/D18-2012.pdf)
 
 Key points
 
