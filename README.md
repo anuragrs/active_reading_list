@@ -75,6 +75,11 @@ Increasingly popular for SoTA numbers, but adds significant computation time
 
 Search space design - Policy has 5 sub-policies each containing 2 image operations applied in sequence. Each operation has probability of application (when), and size of application (how much). Order of operations is important (human domain knowledge!)
 
+[DropBlock: A regularization method for convolutional networks](https://papers.nips.cc/paper/2018/file/7edcfb2d8f6a659ef4cd1e6c9b6d7079-Paper.pdf)
+
+Key points
+Sample a bunch of points in feature maps. Generate a drop mask of a block size around points that are chosen. Extension of cutmix idea.
+
 [Manifold Mixup](http://proceedings.mlr.press/v97/verma19a/verma19a.pdf)
 
 Key points
