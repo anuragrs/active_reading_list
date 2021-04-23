@@ -133,3 +133,10 @@ Key points - Use importance sampling to find most informative examples to update
 Key points
 
 Subword (de)tokenization, language-agnostic, lossless decode(encode(normalize_fst(T))) = normalize_fst(T), where T is a sequence of UNICODE characters. Whitespace is also a symbol (`_`). Directly gives text to vocab id sequence. Training is computationally more efficient O(nlogn) than naive BPE O(n^2) -TODO - summarize the merging process.
+
+[Which Algorithmic Choices Matter at Which Batch Sizes? Insights From a Noisy Quadratic Model](https://arxiv.org/abs/1907.04164)
+
+Key points
+
+TODO: Reading more about K-FAC to understand scaling arguments better
+
