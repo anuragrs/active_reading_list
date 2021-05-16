@@ -140,3 +140,8 @@ Key points
 
 TODO: Reading more about K-FAC to understand scaling arguments better
 
+[How Much Position Information Do Convolutional Neural Networks Encode?](https://arxiv.org/abs/2001.08248)
+
+[RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/pdf/2104.09864.pdf)
+
+Key points: Proposes an alternate positional encoding scheme. Interesting paper to read for diving deeper in the idea of position encodings.
