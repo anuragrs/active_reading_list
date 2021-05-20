@@ -145,3 +145,8 @@ TODO: Reading more about K-FAC to understand scaling arguments better
 [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/pdf/2104.09864.pdf)
 
 Key points: Proposes an alternate positional encoding scheme. Interesting paper to read for diving deeper in the idea of position encodings.
+
+[Rethinking “Batch” in BatchNorm](https://arxiv.org/pdf/2105.07576.pdf)
+
+Key points: Precise BN based on population statistics outperforms BN based on EMA. EMA is not a good estimate especially when model is far from convergence. Interesting point for BN on RCNN head is that using using  mini-batch  statistics in inference can be an effective and legitimate way to reduce train-test inconsistency and improve model’s performance.
+
