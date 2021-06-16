@@ -150,3 +150,11 @@ Key points: Proposes an alternate positional encoding scheme. Interesting paper 
 
 Key points: Precise BN based on population statistics outperforms BN based on EMA. EMA is not a good estimate especially when model is far from convergence. Interesting point for BN on RCNN head is that using using  mini-batch  statistics in inference can be an effective and legitimate way to reduce train-test inconsistency and improve model’s performance.
 
+[Gradient descent happens in a tiny subspace](https://arxiv.org/pdf/1812.04754.pdf)
+
+Key points: For classification problems with `k` classes, the gradient lives in the subspace of the top-k (largest eigenvalue) eigenvectors. Most learning happens in this `small` subspace, and this could potentially explain why overparameterized models are still able to learn efficiently.
+
+[AdaHessian: An adaptive second order optimizer for Machine Learning](https://arxiv.org/pdf/2006.00719.pdf)
+
+Keypoints: Matrix Vector Products are very efficient to compute, exploit this fact to use Rademacher or Gaussian vectors to estimate trace of Hessian by using Hutchinson's trace trick - a few iterations gives good estimates of the trace. Use the trace as a better preconditioner for adaptive optimizers.
+
