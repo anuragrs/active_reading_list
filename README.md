@@ -156,5 +156,5 @@ Key points: For classification problems with `k` classes, the gradient lives in 
 
 [AdaHessian: An adaptive second order optimizer for Machine Learning](https://arxiv.org/pdf/2006.00719.pdf)
 
-Keypoints: Matrix Vector Products are very efficient to compute, exploit this fact to use Rademacher or Gaussian vectors to estimate trace of Hessian by using Hutchinson's trace trick - a few iterations gives good estimates of the trace. Use the trace as a better preconditioner for adaptive optimizers.
+Keypoints: Matrix Vector Products are very efficient to compute, exploit this fact to use Rademacher or Gaussian vectors to estimate trace of Hessian by using Hutchinson's trace trick - a few iterations gives good estimates of the trace/diag(hessian). Use the diag(hessian) as a better preconditioner for adaptive optimizers.
 
