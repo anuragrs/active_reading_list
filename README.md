@@ -158,3 +158,6 @@ Key points: For classification problems with `k` classes, the gradient lives in 
 
 Keypoints: Matrix Vector Products are very efficient to compute, exploit this fact to use Rademacher or Gaussian vectors to estimate trace of Hessian by using Hutchinson's trace trick - a few iterations gives good estimates of the trace/diag(hessian). Use the diag(hessian) as a better preconditioner for adaptive optimizers.
 
+[Making Convolutional Networks Shift-Invariant Again](http://proceedings.mlr.press/v97/zhang19a/zhang19a.pdf)
+
+Keypoints: Standard convnets that use max/avg/strided conv for downsampling make networks lose shift-invariance. As a result, outputs flip/change for small shifts/traslations in input. Applying antialisaing before downsampling fixes fixes this. BlurPool. Also results in increased accuracy and stability/robustness of results.
