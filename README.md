@@ -163,6 +163,6 @@ Keypoints: Matrix Vector Products are very efficient to compute, exploit this fa
 Keypoints: Standard convnets that use max/avg/strided conv for downsampling make networks lose shift-invariance. As a result, outputs flip/change for small shifts/traslations in input. Applying antialisaing before downsampling fixes fixes this. BlurPool. Also results in increased accuracy and stability/robustness of results.
 
 
-[Masked Unsupervised Self-training for Zero-shot Image Classification] (https://arxiv.org/pdf/2206.02967.pdf)
+[Masked Unsupervised Self-training for Zero-shot Image Classification](https://arxiv.org/pdf/2206.02967.pdf)
 
 Keypoints: Combining Masked Image loss with pseudo label loss and global-local embedding alignment loss leads to large improvements on zero shot tasks.
